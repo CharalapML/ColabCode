@@ -1,2 +1,16 @@
 Hi I am Pete,
 I like science and technology
+
+## Notebooks
+
+- 3D_Earthquake_clustering1.ipynb
+- Aug2026_TEST_for_WORKS_Ringing_Up_VIDEO_v6_Transparent_Bell_Swinging_Dual_canvas_ipynb.ipynb
+- Azimuth_and_distance.ipynb
+- Cld2_Aug2026_TEST_for_WORKS_Ringing_Up_VIDEO_v6_Transparent_Bell_Swinging_Dual_canvas.ipynb
+- Cld_FIXED_Aug2026_WORKS_Ringing_Up_VIDEO_v6_Transparent_Bell_Swinging_Dual_canvas.ipynb
+- Galileo's_Wave_Interactive_Pendulum_A02_y_dimension_small_angle.ipynb
+- Galileos_Pendulum_A01_DO_NOT_ALTER.ipynb
+- Primes_plus.ipynb
+- Variation_on_Galileo's_Wave_Pendulum_TimeDelay_Variable_lengths_and_g.ipynb
+- Volume_of_Cone_vs_Theta.ipynb
+- mp4_to_fits.ipynb
