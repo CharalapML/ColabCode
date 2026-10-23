@@ -53,11 +53,3 @@ The finished video is saved as `video_v6.mp4`.
 | Notebook | What it does |
 |----------|--------------|
 | [mp4_to_fits.ipynb](mp4_to_fits.ipynb) | Converts an MP4 video (e.g. a solar timelapse from a SeeStar telescope) into a series of FITS (`.fit`) files that astronomy software can import. Frames are extracted with MoviePy, split into colour channels and written with Astropy. Note that frames pass through JPEG, which loses some quality. |
-
-## Running the notebooks
-
-1. Open a notebook on GitHub and click **Open in Colab**.
-2. Several notebooks start by mounting Google Drive (`drive.mount(...)`) and read or
-   write files at fixed Drive paths. Change those paths to match your own Drive before running.
-3. Any extra packages (`pydataset`, `cairosvg`, `ipyvolume`) are installed by a `pip install` cell
-   in the notebook. Everything else is already available in Colab.
