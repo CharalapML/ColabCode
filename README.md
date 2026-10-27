@@ -47,34 +47,9 @@ The finished video is saved as `video_v6.mp4`.
 | Notebook | What it does |
 |----------|--------------|
 | [3D_Earthquake_clustering1.ipynb](3D_Earthquake_clustering1.ipynb) | Exercise using the R `quakes` dataset (earthquakes near Fiji, via `pydataset`). Plots locations sized by magnitude and coloured by depth, then clusters them with scikit-learn KMeans, in 2D (lat/long) and 3D (with depth), with and without scaling. Includes interactive Plotly 3D plots. |
-| [3D_Earthquake_clustering1_USGSdatafromSEAsia.ipynb](3D_Earthquake_clustering1_USGSdatafromSEAsia.ipynb) | The same analysis on real USGS data: 689 earthquakes of magnitude 5.5 and above across SE Asia, 2016 to 2026. Plots locations and depths, clusters them with KMeans on lat/long and on lat/long/depth, and shows them in static and interactive Plotly 3D plots. Reads [data/EarthQuakeData_SE_Asia.csv](data/EarthQuakeData_SE_Asia.csv), so it needs no Google Drive. |
 
 ### Astronomy: image conversion
 
 | Notebook | What it does |
 |----------|--------------|
 | [mp4_to_fits.ipynb](mp4_to_fits.ipynb) | Converts an MP4 video (e.g. a solar timelapse from a SeeStar telescope) into a series of FITS (`.fit`) files that astronomy software can import. Frames are extracted with MoviePy, split into colour channels and written with Astropy. Note that frames pass through JPEG, which loses some quality. |
-
-## Running locally
-
-The Colab badge is the quickest way in. To run a notebook on your own machine
-instead (Python 3.9 or newer):
-
-```bash
-git clone -b TestingBranch https://github.com/CharalapML/ColabCode.git
-cd ColabCode
-python3 -m venv .venv
-source .venv/bin/activate      # Windows: .venv\Scripts\activate
-pip install -r requirements.txt
-jupyter notebook
-```
-
-`requirements.txt` covers the earthquake notebooks. The other notebooks may need
-extra packages (for example `sympy`, `scipy`, `cairosvg`, `opencv-python`,
-`moviepy`, `astropy`) and some read files from Google Drive, so they are best run in Colab.
-
-## Data
-
-`data/EarthQuakeData_SE_Asia.csv` was exported from the
-[USGS Earthquake Catalog](https://earthquake.usgs.gov/earthquakes/search/).
-USGS data is in the public domain.
