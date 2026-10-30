@@ -47,7 +47,7 @@ The finished video is saved as `video_v6.mp4`.
 | Notebook | What it does |
 |----------|--------------|
 | [3D_Earthquake_clustering1.ipynb](3D_Earthquake_clustering1.ipynb) | Exercise using the R `quakes` dataset (earthquakes near Fiji, via `pydataset`). Plots locations sized by magnitude and coloured by depth, then clusters them with scikit-learn KMeans, in 2D (lat/long) and 3D (with depth), with and without scaling. Includes interactive Plotly 3D plots. |
-| [3D_Earthquake_clustering1_USGSdatafromSEAsia.ipynb](3D_Earthquake_clustering1_USGSdatafromSEAsia.ipynb) | The same analysis on real USGS data: 689 earthquakes of magnitude 5.5 and above across SE Asia, 2016 to 2026. Plots locations sized by magnitude and coloured by depth, clusters them with KMeans (fixed `random_state`, so results repeat) on lat/long and on lat/long/depth, and shows them in static and interactive Plotly 3D plots. Reads [data/EarthQuakeData_SE_Asia.csv](data/EarthQuakeData_SE_Asia.csv), so it needs no Google Drive. |
+| [3D_Earthquake_clustering1_USGSdatafromSEAsia.ipynb](3D_Earthquake_clustering1_USGSdatafromSEAsia.ipynb) | The same analysis on real USGS data: 689 earthquakes of magnitude 5.5 and above across SE Asia, 2016 to 2026. Converts lat/long to UTM (with a plot showing why UTM breaks down when the area spans several zones), plots locations sized by magnitude and coloured by depth, clusters them with KMeans (fixed `random_state`, so results repeat) on lat/long and on lat/long/depth, and shows them in static and interactive Plotly 3D plots. Reads [data/EarthQuakeData_SE_Asia.csv](data/EarthQuakeData_SE_Asia.csv), so it needs no Google Drive. |
 
 ### Astronomy: image conversion
 
@@ -61,7 +61,7 @@ The Colab badge is the quickest way in. To run a notebook on your own machine
 instead (Python 3.9 or newer):
 
 ```bash
-git clone -b TestingBranch https://github.com/CharalapML/ColabCode.git
+git clone https://github.com/CharalapML/ColabCode.git
 cd ColabCode
 python3 -m venv .venv
 source .venv/bin/activate      # Windows: .venv\Scripts\activate
